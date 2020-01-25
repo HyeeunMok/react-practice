@@ -25,7 +25,9 @@ class NewPost extends Component {
         axios.post('https://jsonplaceholder.typicode.com/posts', data)
             .then(response => {
                 console.log(response);
-                this.setState({submitted: true});
+                this.props.history.push('/posts');
+                // this.props.history.replace('/posts');  --> not able to use back arrow button
+                // this.setState({submitted: true});
             });
     }
 
