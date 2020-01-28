@@ -9,7 +9,7 @@ class NewPost extends Component {
         title: '',
         content: '',
         author: 'Mok',
-        submitted: true
+        submitted: false
     }
 
     componentDidMount () {
